@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Income <= 64.5\nmse = 759.7\nsamples = 193\nvalue = 66.5"] ;
+1 [label="Income <= 43.5\nmse = 143.7\nsamples = 87\nvalue = 40.5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Income <= 32.5\nmse = 38.9\nsamples = 53\nvalue = 32.8"] ;
+1 -> 2 ;
+3 [label="mse = 9.8\nsamples = 24\nvalue = 27.2"] ;
+2 -> 3 ;
+4 [label="mse = 11.0\nsamples = 29\nvalue = 37.8"] ;
+2 -> 4 ;
+5 [label="Income <= 52.0\nmse = 48.8\nsamples = 34\nvalue = 53.6"] ;
+1 -> 5 ;
+6 [label="mse = 5.7\nsamples = 14\nvalue = 46.3"] ;
+5 -> 6 ;
+7 [label="mse = 12.4\nsamples = 20\nvalue = 59.0"] ;
+5 -> 7 ;
+8 [label="Income <= 90.5\nmse = 263.5\nsamples = 106\nvalue = 87.7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Income <= 76.5\nmse = 57.1\nsamples = 60\nvalue = 76.2"] ;
+8 -> 9 ;
+10 [label="mse = 9.7\nsamples = 32\nvalue = 70.1"] ;
+9 -> 10 ;
+11 [label="mse = 15.5\nsamples = 28\nvalue = 83.6"] ;
+9 -> 11 ;
+12 [label="Income <= 108.0\nmse = 65.2\nsamples = 46\nvalue = 105.4"] ;
+8 -> 12 ;
+13 [label="mse = 23.5\nsamples = 29\nvalue = 100.3"] ;
+12 -> 13 ;
+14 [label="mse = 11.1\nsamples = 17\nvalue = 114.5"] ;
+12 -> 14 ;
+}
